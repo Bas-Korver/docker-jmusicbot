@@ -14,4 +14,6 @@ if [ ! -f "$FILE" ]; then
     echo ""
 fi
 
-exec java -Dconfig=/opt/jmusicbot/config/config.txt -Dnogui=true -jar /opt/jmusicbot/JMusicBot.jar
+cd /opt/jmusicbot/config
+
+exec java -Dnogui=true -jar /opt/jmusicbot/JMusicBot.jar
