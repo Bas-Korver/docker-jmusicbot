@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   jmusicbot:
-    image: the0doctor/jmusicbot:latest
+    image: bas0korver/jmusicbot:latest
     container_name: jmusicbot
     restart: unless-stopped
     volumes:
