@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  jmusicbot:
+    image: the0doctor/jmusicbot:latest
+    container_name: jmusicbot
+    restart: unless-stopped
+    volumes:
+     - ./config:/opt/jmusicbot/config
