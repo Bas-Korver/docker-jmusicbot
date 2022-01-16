@@ -41,7 +41,9 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7
           push: true
-          tags: bas0korver/jmusicbot:latest
+          tags: |
+            bas0korver/jmusicbot:latest
+            bas0korver/jmusicbot:${{ steps.keydb.outputs.release }}
           build-args: |
             JMUSICBOT_VERSION=${{ steps.keydb.outputs.release }}
             BUILDDATE=${{ steps.date.outputs.date }}
