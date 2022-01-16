@@ -9,6 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
+        id: keydb
+        uses: pozetroninc/github-action-get-latest-release@master
+        with:
+          owner: jagrosh
+          repo: MusicBot
+          excludes: prerelease, draft
+      -
+        name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H:%M:%S%:::z')"
+      -
         name: Checkout
         uses: actions/checkout@v2
       -
@@ -31,3 +42,4 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7*
           push: true
           tags: bas0korver/jmusicbot:latest
+          build-args: JMUSICBOT_VERSION=${{ steps.keydb.outputs.release }}, BUILDDATE=${{ steps.date.outputs.date }}
