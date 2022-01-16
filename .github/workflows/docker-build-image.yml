@@ -51,8 +51,8 @@ jobs:
           tags: |
             bas0korver/jmusicbot:latest
             bas0korver/jmusicbot:${{ steps.keydb.outputs.release }}
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ steps.keydb.outputs.release }}            
+            ghcr.io/bas-Korver/docker-jmusicbot:latest
+            ghcr.io/bas-Korver/docker-jmusicbot:${{ steps.keydb.outputs.release }}            
           build-args: |
             JMUSICBOT_VERSION=${{ steps.keydb.outputs.release }}
             BUILDDATE=${{ steps.date.outputs.date }}
