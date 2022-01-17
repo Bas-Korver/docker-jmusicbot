@@ -5,6 +5,9 @@ on:
 
 jobs:
   generate:
+    runs-on: ubuntu-latest
+    outputs:
+      previous-tag: ${{ steps.previoustag.outputs.tag }}
     steps:
       - uses: actions/checkout@v2.2.0
         with:
