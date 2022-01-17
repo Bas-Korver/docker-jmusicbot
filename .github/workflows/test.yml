@@ -23,4 +23,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           
       - name: Tags
-        run: echo ${{ steps.meta.outputs.tags }} ${{ steps.meta.outputs.labels }}
+        run: echo "tags "${{ steps.meta.outputs.tags }} "labels "${{ steps.meta.outputs.labels }}
