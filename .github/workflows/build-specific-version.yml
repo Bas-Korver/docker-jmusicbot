@@ -7,7 +7,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     env:
-      VERSION: 0.3.5
+      VERSION: 0.3.1
     steps:          
       - name: Get current date
         id: date
@@ -43,7 +43,7 @@ jobs:
           push: true
           tags: |
             bas0korver/jmusicbot:${{ env.VERSION }}
-            ghcr.io/bas-korver/docker-jmusicbot/jmusicbot:${{ env.VERSION }}            
+            ghcr.io/bas-korver/docker-jmusicbot:${{ env.VERSION }}            
           build-args: |
             JMUSICBOT_VERSION=${{ env.VERSION }}
             BUILDDATE=${{ steps.date.outputs.date }}
