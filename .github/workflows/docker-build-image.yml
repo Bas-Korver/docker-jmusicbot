@@ -48,11 +48,12 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7
           push: true
-          tags: |
-            bas0korver/jmusicbot:latest
-            bas0korver/jmusicbot:${{ steps.keydb.outputs.release }}
-            ghcr.io/bas-korver/docker-jmusicbot:latest
-            ghcr.io/bas-korver/docker-jmusicbot:${{ steps.keydb.outputs.release }}            
+#           tags: |
+#             bas0korver/jmusicbot:latest
+#             bas0korver/jmusicbot:${{ steps.keydb.outputs.release }}
+#             ghcr.io/bas-korver/docker-jmusicbot:latest
+#             ghcr.io/bas-korver/docker-jmusicbot:${{ steps.keydb.outputs.release }}     
+          tags: ghcr.io/bas-korver/jmusicbot:${{ steps.keydb.outputs.release }}
           build-args: |
             JMUSICBOT_VERSION=${{ steps.keydb.outputs.release }}
             BUILDDATE=${{ steps.date.outputs.date }}
