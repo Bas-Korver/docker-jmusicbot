@@ -2,8 +2,8 @@ name: Docker Image CI
 
 on:
   push:
-#   schedule:
-#     - cron:  '0 13 * * 1'
+  schedule:
+    - cron:  '0 13 * * 1'
 
 jobs:
   docker:
