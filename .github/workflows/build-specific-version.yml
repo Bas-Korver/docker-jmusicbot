@@ -43,7 +43,7 @@ jobs:
           push: true
           tags: |            
             ghcr.io/bas-korver/jmusicbot:${{ env.VERSION }}            
-#            bas0korver/jmusicbot:${{ env.VERSION }}
+#             bas0korver/jmusicbot:${{ env.VERSION }}
           build-args: |
             JMUSICBOT_VERSION=${{ env.VERSION }}
             BUILDDATE=${{ steps.date.outputs.date }}
