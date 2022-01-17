@@ -1,5 +1,8 @@
 name: Docker Image CI
 
+on:
+  push:
+
 jobs:
   docker:
     runs-on: ubuntu-latest
