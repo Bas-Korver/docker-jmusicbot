@@ -1,6 +1,7 @@
 name: Docker Image CI
 
 on:
+  push:
   schedule:
     - cron:  '0 12 * * 1'
 
@@ -50,8 +51,8 @@ jobs:
           tags: |
             bas0korver/jmusicbot:latest
             bas0korver/jmusicbot:${{ steps.keydb.outputs.release }}
-            ghcr.io/bas-korver/docker-jmusicbot:latest
-            ghcr.io/bas-korver/docker-jmusicbot:${{ steps.keydb.outputs.release }}            
+            ghcr.io/bas-korver/docker-jmusicbot/jmusicbot:latest
+            ghcr.io/bas-korver/docker-jmusicbot/jmusicbot:${{ steps.keydb.outputs.release }}            
           build-args: |
             JMUSICBOT_VERSION=${{ steps.keydb.outputs.release }}
             BUILDDATE=${{ steps.date.outputs.date }}
