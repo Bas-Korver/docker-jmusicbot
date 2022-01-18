@@ -19,4 +19,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         repository: bas0korver/jmusicbot
         short-description: ${{ github.event.repository.description }}
-        readme-filepath: /README.md
+        readme-filepath: README.md
