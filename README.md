@@ -21,6 +21,17 @@ The docker image has been built for multiple architectures, the ones supported a
 
 ## Setup
 1. Download/copy the docker-compose.yml and change any values that need to be changed
-2. If you already have a preconfigured config.txt and serversettings.json place those in the defined volume location.
-3. Run `docker-compose up -d` or `docker compose up -d` depending on the installed docker compose version.
-4. If no configuration files are detected the image will automatically download one from an [example](https://github.com/jagrosh/MusicBot/releases/download/0.2.9/config.txt)
+```yml
+version: "3.9"
+
+services:
+  jmusicbot:
+    image: bas0korver/jmusicbot:latest
+    container_name: jmusicbot
+    restart: unless-stopped
+    volumes:
+     - ./config:/opt/jmusicbot/config
+```
+3. If you already have a preconfigured config.txt and serversettings.json place those in the defined volume location.
+4. Run `docker-compose up -d` or `docker compose up -d` depending on the installed docker compose version.
+5. If no configuration files are detected the image will automatically download one from an [example](https://github.com/jagrosh/MusicBot/releases/download/0.2.9/config.txt)
