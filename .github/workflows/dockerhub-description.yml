@@ -21,3 +21,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
         repository: bas0korver/jmusicbot
         short-description: ${{ github.event.repository.description }}
+        
