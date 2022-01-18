@@ -2,7 +2,7 @@ name: Update Docker Hub Description
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - README.md
       - .github/workflows/dockerhub-description.yml
@@ -19,4 +19,3 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         repository: bas0korver/jmusicbot
         short-description: ${{ github.event.repository.description }}
-        readme-filepath: README.md
