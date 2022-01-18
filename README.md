@@ -5,7 +5,7 @@
 [![Build](https://img.shields.io/github/workflow/status/Bas-Korver/docker-jmusicbot/Build%20Docker%20image%20latest%20version?style=for-the-badge)](https://github.com/Bas-Korver/docker-jmusicbot/actions/workflows/docker-build-image.yml)
 
 # [bas0korver/jmusicbot](https://hub.docker.com/repository/docker/bas0korver/jmusicbot)
-A Dockerized version of the JMusicBot application by [jagrosh](https://github.com/jagrosh/MusicBot)
+A Dockerized version of the JMusicBot application by [jagrosh](https://github.com/jagrosh/MusicBot), for running your own Discord music bot
 
 <img src="https://i.imgur.com/zrE80HY.png" height="200" width="200">
 
