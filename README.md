@@ -3,6 +3,8 @@
 [![License](https://img.shields.io/github/license/Bas-Korver/docker-jmusicbot?style=for-the-badge)](https://github.com/Bas-Korver/docker-jmusicbot/blob/master/LICENSE)
 [![Version](https://img.shields.io/docker/v/bas0korver/jmusicbot?sort=semver&style=for-the-badge)](https://hub.docker.com/layers/bas0korver/jmusicbot/latest/images/sha256-bafec6548786c0ea50fdd10f4b05224264fdbaf1951a4ae01c5dbbd3337696f2?context=explore)
 [![Build](https://img.shields.io/github/workflow/status/Bas-Korver/docker-jmusicbot/Build%20Docker%20image%20latest%20version?style=for-the-badge)](https://github.com/Bas-Korver/docker-jmusicbot/actions/workflows/docker-build-image.yml)
+<style>div {text-align: center;}</style>
+<div> [![CodeFactor](https://www.codefactor.io/repository/github/bas-korver/docker-jmusicbot/badge?style=for-the-badge)](https://www.codefactor.io/repository/github/bas-korver/docker-jmusicbot)</div>
 
 # [bas0korver/jmusicbot](https://hub.docker.com/repository/docker/bas0korver/jmusicbot)
 A Dockerized version of the JMusicBot application by [jagrosh](https://github.com/jagrosh/MusicBot), for running your own Discord music bot.
