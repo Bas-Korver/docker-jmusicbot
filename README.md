@@ -7,7 +7,7 @@
   <a href="https://www.codefactor.io/repository/github/bas-korver/docker-jmusicbot"><img src=https://www.codefactor.io/repository/github/bas-korver/docker-jmusicbot/badge?style=for-the-badge></a>
 </p>
 
-# [bas0korver/jmusicbot](https://hub.docker.com/repository/docker/bas0korver/jmusicbot)
+# [bas0korver/jmusicbot](https://hub.docker.com/r/bas0korver/jmusicbot)
 A Dockerized version of the JMusicBot application by [jagrosh](https://github.com/jagrosh/MusicBot), for running your own Discord music bot.
 
 <img src="https://i.imgur.com/zrE80HY.png" height="200" width="200">
